@@ -11,7 +11,7 @@ class FruitController {
     @GetMapping
     fun getAll(
         @RequestParam(required = false) name: String?,
-        @RequestParam(required = false) color: String?
+        @RequestParam(required = false) color: Color?
     ): List<Fruit> {
         var result: List<Fruit> = fruits
         result = if (name != null) result.filter { it.name == name } else result
