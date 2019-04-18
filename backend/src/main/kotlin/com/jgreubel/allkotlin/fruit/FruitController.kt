@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/fruit")
-open class FruitController {
+class FruitController {
 
     val fruits: MutableList<Fruit> = mutableListOf()
 
